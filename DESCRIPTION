@@ -1,7 +1,7 @@
 Package: devoutansi
 Type: Package
 Title: ANSI Graphics Device
-Version: 0.1.0
+Version: 0.1.1
 Author: mikefc
 Maintainer: mikefc <mikefc@coolbutuseless.com>
 Description: ANSI graphics device.
@@ -11,7 +11,7 @@ LazyData: true
 RoxygenNote: 7.1.0
 Imports:
     devout,
-    miniansi
+    miniansi (>= 0.1.2)
 Remotes:
     jeroenjanssens/devout,
     jeroenjanssens/miniansi
