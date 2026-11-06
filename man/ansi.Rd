@@ -12,6 +12,7 @@ ansi(
   plain_ascii = FALSE,
   pow = 1,
   char_lookup_table = 1,
+  colour = TRUE,
   font_aspect = 0.45,
   ...
 )
@@ -33,6 +34,9 @@ power before conversion to an ASCII character.  Default: 1}
 
 \item{char_lookup_table}{only valid when \code{plain_ascii = TRUE}. Choose from
 the available character mappings. Default: 1. Possible values 1, 2 or 3}
+
+\item{colour}{Output ANSI colour codes. Set to FALSE together with
+\code{plain_ascii = TRUE} for plain text. Default: TRUE}
 
 \item{font_aspect}{Character spacing horizontally and vertically are almost
 never the same. On many terminals character resolution vertically is

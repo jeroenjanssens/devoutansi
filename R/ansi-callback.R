@@ -74,11 +74,12 @@ ansi_close <- function(args, state) {
   plain_ascii       <- isTRUE(state$rdata$plain_ascii)
   char_lookup_table <- state$rdata$char_lookup_table %||% 1
   pow               <- state$rdata$pow %||% 1
+  colour            <- state$rdata$colour %||% TRUE
 
   if (!is.null(filename)) {
-    ansi$save(filename, plain_ascii = plain_ascii, char_lookup_table = char_lookup_table, pow = pow)
+    ansi$save(filename, plain_ascii = plain_ascii, char_lookup_table = char_lookup_table, pow = pow, colour = colour)
   } else {
-    ansi$print(plain_ascii = plain_ascii, char_lookup_table = char_lookup_table, pow = pow)
+    ansi$print(plain_ascii = plain_ascii, char_lookup_table = char_lookup_table, pow = pow, colour = colour)
   }
 
   state
