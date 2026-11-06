@@ -12,3 +12,6 @@ RoxygenNote: 7.1.0
 Imports:
     devout,
     miniansi
+Remotes:
+    jeroenjanssens/devout,
+    jeroenjanssens/miniansi
